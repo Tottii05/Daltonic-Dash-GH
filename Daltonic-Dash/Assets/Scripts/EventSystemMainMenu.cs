@@ -7,18 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class EventSystemMainMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //For button hovering
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
+    //For button presses
     public void startGame()
     {
         SceneManager.LoadScene(1);
