@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 10.25
-    NearClipPlane: -0.48
+    NearClipPlane: 0.01
     FarClipPlane: 1000
     Dutch: 0
     ModeOverride: 0
@@ -413,8 +413,8 @@ Transform:
   m_GameObject: {fileID: 1053367591}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.02, y: -5.77, z: 0}
-  m_LocalScale: {x: 20.75, y: 3.65, z: 1}
+  m_LocalPosition: {x: -7.25, y: -3.894, z: 0}
+  m_LocalScale: {x: 3.8767226, y: 0.38358536, z: 0.18683}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -478,7 +478,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 166.8
+  field of view: 139.9
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -505,7 +505,7 @@ Transform:
   m_GameObject: {fileID: 1252767693}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.7, y: -3, z: -0.35783}
+  m_LocalPosition: {x: -7.38, y: -3, z: -0.35783}
   m_LocalScale: {x: 1.0425292, y: 1.0946556, z: 1.0425292}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -585,18 +585,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05237872, y: 0.12405501}
+  m_Offset: {x: -0.034514375, y: 0.08386004}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8, y: 0.8}
+    oldSize: {x: 0.53333336, y: 0.53333336}
     newSize: {x: 0.8, y: 0.8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.33134794, y: 0.47470018}
+  m_Size: {x: 0.20034121, y: 0.30201057}
   m_EdgeRadius: 0
 --- !u!50 &2064015519
 Rigidbody2D:
@@ -686,8 +686,8 @@ Transform:
   m_GameObject: {fileID: 2064015516}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.31, y: -3.48, z: 0}
-  m_LocalScale: {x: 4.1113, y: 4.1113, z: 4.1113}
+  m_LocalPosition: {x: -8.78, y: -3.65, z: 0}
+  m_LocalScale: {x: 0.76434404, y: 0.76434404, z: 0.76434404}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -705,7 +705,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2064015519}
-  jumpForce: 10
+  anim: {fileID: 2064015517}
+  jumpForce: 2.7
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
