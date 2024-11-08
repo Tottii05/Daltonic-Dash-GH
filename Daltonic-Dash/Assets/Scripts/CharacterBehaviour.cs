@@ -5,6 +5,7 @@ using UnityEngine;
 public class CharacterBehaviour : MonoBehaviour
 {
     public Rigidbody2D rb;
+    public Animator anim;
     [SerializeField] private float jumpForce = 10f;
     void Start()
     {
@@ -20,6 +21,7 @@ public class CharacterBehaviour : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            anim.SetTrigger("jump");
         }
     }
 }
