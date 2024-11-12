@@ -8,8 +8,11 @@ public class CharacterBehaviour : MonoBehaviour
     public Animator anim;
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private bool isGrounded = true;
+    public SpriteRenderer spriteRenderer;
     void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         Time.timeScale = 1;
     }
     void Update()
@@ -30,12 +33,14 @@ public class CharacterBehaviour : MonoBehaviour
     public void CheckGrounded()
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position + Vector3.right* -0.2f, Vector2.down, 0.09f);
-        //Debug.DrawRay(transform.position + Vector3.right * -0.02f, Vector2.down, Color.red);
         Debug.DrawLine(transform.position + Vector3.right * -0.02f, transform.position + Vector3.right * -0.02f + Vector3.down * 0.09f, Color.red);
-        isGrounded = hit.collider.gameObject.CompareTag("Ground");
-        Debug.Log(isGrounded);
+        if (hit.collider != null)
+        {
+            isGrounded = hit.collider.gameObject.CompareTag("Ground");
+        }
     }
-    public void OnCollisionEnter2D(Collision2D collision)
+
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Spyke")
         {
@@ -45,7 +50,8 @@ public class CharacterBehaviour : MonoBehaviour
     }
     public IEnumerator DeadCoroutine()
     {
-        yield return new WaitForSeconds(0.03f);
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.enabled = false;
         Time.timeScale = 0;
     }
 }
