@@ -38,6 +38,10 @@ public class CharacterBehaviour : MonoBehaviour
         {
             isGrounded = hit.collider.gameObject.CompareTag("Ground");
         }
+        else
+        {
+            isGrounded = false;
+        }
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
