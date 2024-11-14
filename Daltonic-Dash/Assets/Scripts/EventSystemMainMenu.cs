@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -26,7 +23,7 @@ public class EventSystemMainMenu : MonoBehaviour
     }
 
     public void endGame() {
-        EditorApplication.isPlaying = false;
+        //EditorApplication.isPlaying = false;
         Application.Quit();
     }
 
