@@ -598,10 +598,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2064015521}
   - component: {fileID: 2064015520}
+  - component: {fileID: 2064015522}
   - component: {fileID: 2064015519}
   - component: {fileID: 2064015518}
   - component: {fileID: 2064015517}
-  - component: {fileID: 2064015522}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
