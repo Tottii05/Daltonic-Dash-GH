@@ -7,7 +7,16 @@ using UnityEngine.SceneManagement;
 
 public class EventSystemMainMenu : MonoBehaviour
 {
-    //For button hovering
+    private bool settingsController = false;
+    private GameObject Canvas;
+    private GameObject settingsCanvas;
+    public void Start()
+    {
+        settingsController = false;
+        Canvas = GameObject.Find("Canvas");
+        settingsCanvas = GameObject.Find("SettingsCanvas");
+        settingsCanvas.SetActive(false);
+    }
 
 
     //For button presses
@@ -23,6 +32,9 @@ public class EventSystemMainMenu : MonoBehaviour
 
     public void openSettings()
     {
-        SceneManager.LoadScene(2);
+        settingsController = !settingsController;
+        settingsCanvas.SetActive(!settingsController);
+        settingsCanvas.SetActive(settingsController);
+        
     }
 }
