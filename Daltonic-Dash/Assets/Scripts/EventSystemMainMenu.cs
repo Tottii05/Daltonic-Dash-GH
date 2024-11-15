@@ -1,10 +1,22 @@
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class EventSystemMainMenu : MonoBehaviour
 {
-    //For button hovering
+    private bool settingsController;
+    private bool colorsController = false;
+    private GameObject Canvas;
+    private GameObject settingsCanvas;
+    private GameObject colorsCanvas;
+    public void Start()
+    {
+        settingsController = false;
+        Canvas = GameObject.Find("Canvas");
+        settingsCanvas = GameObject.Find("SettingsCanvas");
+        colorsCanvas = GameObject.Find("Canva_DaltonicType");
+        settingsCanvas.SetActive(false);
+        colorsCanvas.SetActive(false);
+    }
 
 
     //For button presses
@@ -14,12 +26,18 @@ public class EventSystemMainMenu : MonoBehaviour
     }
 
     public void endGame() {
-        //EditorApplication.isPlaying = false;
         Application.Quit();
     }
 
-    public void openSettings()
+    public void toggleSettings()
     {
-        SceneManager.LoadScene(2);
+        settingsController = !settingsController;
+        settingsCanvas.SetActive(settingsController);        
+    }
+
+    public void toggleColors()
+    {
+        colorsController = !colorsController;
+        colorsCanvas.SetActive(colorsController);
     }
 }
