@@ -51,21 +51,27 @@ public class EventSystemMainMenu : MonoBehaviour
     }
 
     //Color change buttons in the ColorMenu
-    public void SelectDeutreranopy()
+    public void SelectGreenRed()
     {
-        PlayerPrefs.SetString("BGColor", "#D9534F");
-        PlayerPrefs.SetString("SpykeColor", "#5CB85C");
-        Debug.Log("esto funcha");
+        PlayerPrefs.SetString("BGColor", "#5CB85C");
+        PlayerPrefs.SetString("SpykeColor", "#D9534F");
     }
 
-    public void SelectTritanopy()
-    { 
-        PlayerPrefs.SetString("SpykeColor", "#59E59A");
+    public void SelectBlueOrange()
+    {
+        PlayerPrefs.SetString("BGColor", "#29B096");
+        PlayerPrefs.SetString("SpykeColor", "#F67126");
     }
 
-    public void SelectProtanopy()
+    public void SelectPurpleBlue()
     {
-        PlayerPrefs.SetString("SpykeColor", "#C9302C");
+        PlayerPrefs.SetString("BGColor", "#674A56");
+        PlayerPrefs.SetString("SpykeColor", "#3F6485");
+    }
+    public void SelectPinkOrange()
+    {
+        PlayerPrefs.SetString("BGColor", "#F4A698");
+        PlayerPrefs.SetString("SpykeColor", "#F67126");
     }
 
     ///Sliders
