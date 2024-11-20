@@ -7,7 +7,7 @@ Toma el papel de Duko, quien debe mirar con atención los obstaculos que vienen 
 ¡Pero ten cuidado!, los obstáculos se harán más complicados de ver al paso del tiempo.  
 Salta con el botón SPACE (Barra espaciadora) para saltar los pinchos conforme se acerquen.
 
-El proyecto aún se encuentra en desarrollo pero los siguientes links contienen documentos e información del proyecto:  
+El proyecto aún se encuentra en desarrollo pero los siguientes links contienen documentos e información del proyecto:   
 [Documento de Minimo Producto Viable (MVP)](https://docs.google.com/document/d/135gP8d6-WW5bkHVN5WQk89F881rJ9DwVj69a5uHU4LQ/edit?usp=sharing)  
 [Documento de guía de estilos](https://docs.google.com/document/d/1dmRMeLDmxfmuZd4OmPtw6fpsy2Wf0UU15HiIk3EA3dI/edit?usp=sharing)  
   
