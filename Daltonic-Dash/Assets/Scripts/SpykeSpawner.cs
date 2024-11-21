@@ -11,7 +11,7 @@ public class SpykeSpawner : MonoBehaviour
     public Stack<GameObject> spykeStack;
     private Color actualColor;
     private Color targetColor;
-    private float lerpProgress = -10f;
+    private float lerpProgress = -20f;
 
     void Start()
     {

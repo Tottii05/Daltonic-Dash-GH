@@ -29,7 +29,6 @@ public class EventSystemMainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
-
     //Quit button
     public void endGame() {
         Application.Quit();

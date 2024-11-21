@@ -8,11 +8,14 @@ public class CharacterBehaviour : MonoBehaviour
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private bool isGrounded = true;
     public SpriteRenderer spriteRenderer;
+    public GameObject gameOverCanvas;
     void Start()
     {
+        gameOverCanvas = GameObject.Find("Canva_GameOver");
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         Time.timeScale = 1;
+        gameOverCanvas.SetActive(false);
     }
     void Update()
     {
@@ -56,5 +59,6 @@ public class CharacterBehaviour : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         spriteRenderer.enabled = false;
         Time.timeScale = 0;
+        gameOverCanvas.SetActive(true);
     }
 }
