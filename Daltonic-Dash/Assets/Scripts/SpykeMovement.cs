@@ -4,13 +4,9 @@ public class SpykeMovement : MonoBehaviour
 {
     private float speed = -1.5f;
     private SpykeSpawner spykeSpawner;
-    [SerializeField] private Color initialColor;
-    [SerializeField] private SpriteRenderer spriteRenderer;
     void Start()
     {
-        ColorUtility.TryParseHtmlString("#5CB85C", out initialColor);
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.color = initialColor;
+
     }
 
     void Update()

@@ -9,8 +9,14 @@ public class SpykeSpawner : MonoBehaviour
     public GameObject spykePrefab;
     public GameObject spykeSpawnPoint;
     public Stack<GameObject> spykeStack;
+    private Color actualColor;
+    private Color targetColor;
+    private float lerpProgress = -20f;
+
     void Start()
     {
+        ColorUtility.TryParseHtmlString(PlayerPrefs.GetString("SpykeColor"), out actualColor);
+        ColorUtility.TryParseHtmlString(PlayerPrefs.GetString("BGColor"), out targetColor);
         Vector2 spawnPoint = new Vector2(spykeSpawnPoint.transform.position.x, spykeSpawnPoint.transform.position.y);
         spykeStack = new Stack<GameObject>();
         for (int i = 0; i < 3; i++)
@@ -20,10 +26,6 @@ public class SpykeSpawner : MonoBehaviour
             spykeStack.Push(spyke);
         }
         StartCoroutine(SpawnSpykes());
-    }
-    void Update()
-    {
-
     }
 
     public void Push(GameObject spyke)
@@ -41,6 +43,9 @@ public class SpykeSpawner : MonoBehaviour
     {
         GameObject spyke = Pop();
         spyke.transform.position = new Vector2(spykeSpawnPoint.transform.position.x, spykeSpawnPoint.transform.position.y);
+        lerpProgress = Mathf.Clamp01(lerpProgress + 0.1f);
+        actualColor = Color.Lerp(actualColor, targetColor, lerpProgress);
+        spyke.GetComponent<SpriteRenderer>().color = actualColor;
         spyke.SetActive(true);
         yield return new WaitForSeconds(Random.Range(minTimeSpawn, maxTimeSpawn));
         yield return SpawnSpykes();
