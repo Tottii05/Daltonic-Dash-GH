@@ -93,14 +93,18 @@ public class EventSystemMainMenu : MonoBehaviour
     public void setMusicVolume()
     {
         PlayerPrefs.SetFloat("MusicVolume", musicSlider.GetComponent<Slider>().value);
-        Debug.Log(musicSlider.GetComponent<Slider>().value);
+        
+        AudioManager.instance.SetVolumeMusic(musicSlider.GetComponent<Slider>().value);
+        //Debug.Log(musicSlider.GetComponent<Slider>().value);
     }
 
     //For volume slider
     public void setSFXVolume()
     {
         PlayerPrefs.SetFloat("SFXVolume", sfxSlider.GetComponent<Slider>().value);
-        Debug.Log(sfxSlider.GetComponent<Slider>().value);
+        AudioManager.instance.SetVolumeSound(sfxSlider.GetComponent<Slider>().value);
+        //Debug.Log(sfxSlider.GetComponent<Slider>().value);
+        
     }
 
 }

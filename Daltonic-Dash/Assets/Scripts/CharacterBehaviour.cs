@@ -27,6 +27,7 @@ public class CharacterBehaviour : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
+            AudioManager.instance.PlaySoundJump();
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             anim.SetTrigger("jump");
         }
@@ -58,6 +59,7 @@ public class CharacterBehaviour : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         spriteRenderer.enabled = false;
+        AudioManager.instance.PlaySoundExplote();
         Time.timeScale = 0;
         gameOverCanvas.SetActive(true);
     }
