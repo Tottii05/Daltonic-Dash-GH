@@ -10,6 +10,11 @@ public class EventSystemMainMenu : MonoBehaviour
     private GameObject settingsCanvas;
     private GameObject colorsCanvas;
     private GameObject volumeSlider;
+    public Sprite OriginalSprite;
+    public Sprite BlueOrangeMenuSprite;
+    public Sprite PurpleBlueMenuSprite;
+    public Sprite PinkOrangeMenuSprite;
+    public GameObject ColorMenu;
     public void Start()
     {
         settingsController = false;
@@ -18,7 +23,8 @@ public class EventSystemMainMenu : MonoBehaviour
         colorsCanvas = GameObject.Find("Canva_DaltonicType");
         settingsCanvas.SetActive(false);
         colorsCanvas.SetActive(false);
-
+        ColorMenu = GameObject.Find("Menu_6");
+        OriginalSprite = ColorMenu.GetComponent<Image>().sprite;
         volumeSlider = GameObject.Find("VolumeSetting");
     }
 
@@ -54,23 +60,27 @@ public class EventSystemMainMenu : MonoBehaviour
     {
         PlayerPrefs.SetString("BGColor", "#5CB85C");
         PlayerPrefs.SetString("SpykeColor", "#D9534F");
+        ColorMenu.GetComponent<Image>().sprite = OriginalSprite;
     }
 
     public void SelectBlueOrange()
     {
         PlayerPrefs.SetString("BGColor", "#29B096");
         PlayerPrefs.SetString("SpykeColor", "#F67126");
+        ColorMenu.GetComponent<Image>().sprite = BlueOrangeMenuSprite;
     }
 
     public void SelectPurpleBlue()
     {
         PlayerPrefs.SetString("BGColor", "#674A56");
         PlayerPrefs.SetString("SpykeColor", "#3F6485");
+        ColorMenu.GetComponent<Image>().sprite = PurpleBlueMenuSprite;
     }
     public void SelectPinkOrange()
     {
         PlayerPrefs.SetString("BGColor", "#F4A698");
         PlayerPrefs.SetString("SpykeColor", "#F67126");
+        ColorMenu.GetComponent<Image>().sprite = PinkOrangeMenuSprite;
     }
 
     ///Sliders
