@@ -20,6 +20,6 @@ Documentos de/para colaboradores y docentes del Institut Tecnològic de Barcelon
   
 Developed By:  
   [Joaquín Alcazar](https://github.com/JoaquinAlcazar)  
-  [Arnau Molano](https://github.com/MolaniTTo)
-  [Eric Requena](https://github.com/EricRequena)
-  [Tomás Vicente](https://github.com/Tottii05)
+  [Arnau Molano](https://github.com/MolaniTTo)  
+  [Eric Requena](https://github.com/EricRequena)  
+  [Tomás Vicente](https://github.com/Tottii05)  
