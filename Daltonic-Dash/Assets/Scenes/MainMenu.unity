@@ -203,6 +203,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e58c568819430cf40952e2b4d70c13d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OriginalSprite: {fileID: 469937251, guid: 148979e32b486594eb5c07517e7da329, type: 3}
+  BlueOrangeMenuSprite: {fileID: -1059958954, guid: 148979e32b486594eb5c07517e7da329, type: 3}
+  PurpleBlueMenuSprite: {fileID: 590619778, guid: 148979e32b486594eb5c07517e7da329, type: 3}
+  PinkOrangeMenuSprite: {fileID: 292178203, guid: 148979e32b486594eb5c07517e7da329, type: 3}
+  ColorMenu: {fileID: 1792315800}
 --- !u!1 &81613333
 GameObject:
   m_ObjectHideFlags: 0
@@ -2571,14 +2576,14 @@ RectTransform:
   m_GameObject: {fileID: 1792315800}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 18, y: 18, z: 22.74726}
+  m_LocalScale: {x: 22.035234, y: 18, z: 22.74726}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2018297623}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.03, y: -2.683}
+  m_AnchoredPosition: {x: -0.06, y: -2.683}
   m_SizeDelta: {x: 0.35333332, y: 0.11333334}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1792315803
@@ -2601,7 +2606,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -60156364, guid: 80f91c4f243d54a4388fc21ae343b60d, type: 3}
+  m_Sprite: {fileID: 469937251, guid: 148979e32b486594eb5c07517e7da329, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
