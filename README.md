@@ -15,3 +15,11 @@ Documentos de/para colaboradores y docentes del Institut Tecnològic de Barcelon
 [Documento de investigación del daltonismo](https://docs.google.com/document/d/1-ldyjcCVDqctkJwWRfLBniikvycwFagIjV8BI6nYuc8/edit?usp=sharing)  
 [Documento de historias de usuario del Sprint 1](https://docs.google.com/document/d/1RvtTpjyUt9n48vzGLsf6lG3dAcTXf7yP7ofkzxtmKmc/edit?usp=sharing)  
 [Documento de historias de usuario del Sprint 2](https://docs.google.com/document/d/18Nus8kHr0u2aEdK3IMXIWbSqQTRpL_bA8DE3uG4NAEg/edit?usp=sharing)  
+
+
+  
+Developed By:  
+  [Joaquín Alcazar](https://github.com/JoaquinAlcazar)  
+  [Arnau Molano](https://github.com/MolaniTTo)
+  [Eric Requena](https://github.com/EricRequena)
+  [Tomás Vicente](https://github.com/Tottii05)
