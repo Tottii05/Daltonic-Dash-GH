@@ -49,7 +49,7 @@ public class AudioManager : MonoBehaviour
         SoundButton.Play();
     }
 
-    public void SetVolumeSound(float volume)
+    public void SetVolumeSound(float volume) // Ajustar el volumen de sonido
     {
         if (volume == 0)
         {
@@ -63,15 +63,15 @@ public class AudioManager : MonoBehaviour
 
     }
 
-    public void SetVolumeMusic(float volume)
+    public void SetVolumeMusic(float volume) // Ajustar el volumen de la música
     {
         if (volume == 0)
         {
-            audioMixer.SetFloat("Sound", -80);
+            audioMixer.SetFloat("Music", -80);
         }
         else
         {
-            audioMixer.SetFloat("Sound", Mathf.Log10(volume) * 20);
+            audioMixer.SetFloat("Music", Mathf.Log10(volume) * 20);
         }
     }
 
