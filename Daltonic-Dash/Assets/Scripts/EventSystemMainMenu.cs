@@ -9,7 +9,8 @@ public class EventSystemMainMenu : MonoBehaviour
     private GameObject Canvas;
     private GameObject settingsCanvas;
     private GameObject colorsCanvas;
-    private GameObject volumeSlider;
+    private GameObject musicSlider;
+    private GameObject sfxSlider;
     public Sprite OriginalSprite;
     public Sprite BlueOrangeMenuSprite;
     public Sprite PurpleBlueMenuSprite;
@@ -21,11 +22,15 @@ public class EventSystemMainMenu : MonoBehaviour
         Canvas = GameObject.Find("Canvas");
         settingsCanvas = GameObject.Find("SettingsCanvas");
         colorsCanvas = GameObject.Find("Canva_DaltonicType");
+        sfxSlider = GameObject.Find("SFXVolume");
+        sfxSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("SFXVolume");
+        musicSlider = GameObject.Find("MusicVolume");
+        musicSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("MusicVolume");
+        
         settingsCanvas.SetActive(false);
         colorsCanvas.SetActive(false);
         ColorMenu = GameObject.Find("Menu_6");
         OriginalSprite = ColorMenu.GetComponent<Image>().sprite;
-        volumeSlider = GameObject.Find("VolumeSetting");
     }
 
 
@@ -85,9 +90,21 @@ public class EventSystemMainMenu : MonoBehaviour
 
     ///Sliders
     //For volume slider
-    public void setVolume()
+    public void setMusicVolume()
     {
-        PlayerPrefs.SetFloat("Volume", volumeSlider.GetComponent<Slider>().value);
+        PlayerPrefs.SetFloat("MusicVolume", musicSlider.GetComponent<Slider>().value);
+        
+        AudioManager.instance.SetVolumeMusic(musicSlider.GetComponent<Slider>().value);
+        //Debug.Log(musicSlider.GetComponent<Slider>().value);
+    }
+
+    //For volume slider
+    public void setSFXVolume()
+    {
+        PlayerPrefs.SetFloat("SFXVolume", sfxSlider.GetComponent<Slider>().value);
+        AudioManager.instance.SetVolumeSound(sfxSlider.GetComponent<Slider>().value);
+        //Debug.Log(sfxSlider.GetComponent<Slider>().value);
+        
     }
 
 }
