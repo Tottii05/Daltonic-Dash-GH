@@ -107,4 +107,10 @@ public class EventSystemMainMenu : MonoBehaviour
         
     }
 
+    //For the GHub logo button
+    public void openRepository()
+    {
+        Application.OpenURL("https://github.com/Tottii05/Daltonic-Dash-GH");
+    }
+
 }
