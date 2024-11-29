@@ -6,25 +6,25 @@ public class Fondo : MonoBehaviour
 {
     [SerializeField] private Vector2 velocidadMovimiento;
 
-    private Vector2 offset;
 
     private Material material;
     private Color color;
 
     private void Awake()
     {
-        //coger el material del sprite renderer
         material = GetComponent<SpriteRenderer>().material;
         ColorUtility.TryParseHtmlString(PlayerPrefs.GetString("BGColor"), out color);
         material.color = color;
     }
 
+    private Vector2 totalOffset = Vector2.zero;
+
     private void Update()
     {
-        offset = velocidadMovimiento * Time.deltaTime;
-        material.mainTextureOffset += offset;
-
+        totalOffset.x += velocidadMovimiento.x * Time.deltaTime;
+        totalOffset.y += velocidadMovimiento.y * Time.deltaTime;
+        material.mainTextureOffset = totalOffset;
     }
-     
+
 
 }
