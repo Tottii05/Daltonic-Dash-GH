@@ -1067,6 +1067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spykePrefab: {fileID: 1967574249380836702, guid: 17dace783f6e09c499f16542f3e02ae7, type: 3}
   spykeSpawnPoint: {fileID: 1176341537}
+  targetColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1302808090
 Transform:
   m_ObjectHideFlags: 0
@@ -1259,7 +1260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea9947e6a7e6d8c429cc7edd635d2a22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMovimiento: {x: 0.8, y: 0}
+  velocidadMovimiento: {x: 0.42, y: 0}
 --- !u!61 &1483014524
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1910,7 +1911,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1939,7 +1940,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 120.0598, w: 0}
+  m_margin: {x: -211.28502, y: 0, z: -89.87949, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
