@@ -16,6 +16,7 @@ Documentos de/para colaboradores y docentes del Institut Tecnològic de Barcelon
 [Documento de historias de usuario del Sprint 1](https://docs.google.com/document/d/1RvtTpjyUt9n48vzGLsf6lG3dAcTXf7yP7ofkzxtmKmc/edit?usp=sharing)  
 [Documento de historias de usuario del Sprint 2](https://docs.google.com/document/d/18Nus8kHr0u2aEdK3IMXIWbSqQTRpL_bA8DE3uG4NAEg/edit?usp=sharing)  
 [Documento de historias de usuario del Sprint 3](https://docs.google.com/document/d/1VlOd6W8MK79UmwvQ-LaHZfCOmmjWU6topf-FOOErJE0/edit?tab=t.0)  
+[Presentación en Canva del proyecto](https://www.canva.com/design/DAGXxn4MPf4/QhGlodtbyZC68gBJkcY2xw/view?utm_content=DAGXxn4MPf4&utm_campaign=designshare&utm_medium=link&utm_source=editor)  
 
 
   
